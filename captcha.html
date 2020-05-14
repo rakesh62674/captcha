@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>captcha</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="captcha.js"></script>
+ 
+</head>
+
+<body onload="generatecaptcha();" style="padding-top: 200px;">
+	
+	<center>
+		<h1>captcha validation</h1>
+		<table>
+			<tr>
+				<td><input type="text" class="form-control" id="maincaptcha" readonly="readonly"></td>
+				<td><input type="button" class="btn btn-info" id="refresh" value="refresh" onclick="generatecaptcha();"></td>
+			</tr>
+			<tr>
+				<td><input type="text" class="form-control" id="txtinput"/></td>
+			</tr>
+			<tr>
+				<td><input type="button" id="button1" value="check" onclick="checkvalidcaptcha();"class="mt-2 btn btn-primary"/></td>
+			</tr>
+			<tr>
+			<td><span id="error" style="color:red"></span></td></tr>
+			<tr>
+			<td><span id="sucess" style="color:green"></span></td></tr>
+		</table>
+	</center>
+	
+
+		
+
+
+</body>
+</html>
